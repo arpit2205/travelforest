@@ -1,0 +1,54 @@
+#current-users {
+    
+    width: 60%;
+    color: white;
+    margin: auto auto;
+    padding: 50px 0px;
+    border: 1px solid $faint-white;
+    transition: all .4s;
+
+    h3, h4 {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+
+    &:hover {
+        background-color: rgba($color: #000, $alpha: .4);   
+    }
+}
+
+//FOR PHONES============================================
+
+@media only screen and (max-width: 1300px) {
+
+    #current-users {
+    
+        width: 60%;
+        color: white;
+        margin: 100px auto;
+        padding: 50px 0px;
+        border: 1px solid $faint-white;
+    
+        h3, h4 {
+            text-align: center;
+        }
+    
+        h3 {
+            font-size: 30px;
+        }
+    
+        h4 {
+            font-size: 60px;
+            margin-top: 30px;
+        }
+    }
+
+}

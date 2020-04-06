@@ -1,0 +1,122 @@
+#info-section {
+    color: rgb(235, 235, 235);
+    margin: px-to-rem(82px);
+
+    article {
+        display: flex;
+        align-items: center;
+        margin: px-to-rem(40px) px-to-rem(20px);
+
+        figure {
+            width: 45%;
+            height: px-to-rem(222px);
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+            transition: all .4s;
+            
+        }
+
+        div {
+            margin-left: px-to-rem(82px);
+            transition: all .4s;
+
+            h2 {
+                font-size: px-to-rem(32px);
+                margin-bottom: px-to-rem(8px);
+            }
+
+            p {
+                font-size: px-to-rem(16px);
+                width: 80%;
+                line-height: 220%;
+            }
+        }
+    }
+
+    article:nth-of-type(1) figure {background-image: get-image("info-1.jpg");}
+    article:nth-of-type(2) figure {background-image: get-image("info-2.jpg");}
+    article:nth-of-type(3) figure {background-image: get-image("info-3.jpg");}
+
+    margin-bottom: 200px;
+}
+
+//Animation for laptops only
+@media only screen and (min-width: 1300px) {
+
+    #info-section {
+    article {
+        figure {
+            &:hover {
+                transform: scale(1.04);
+                box-shadow: 20px 20px 30px black;
+            }
+        }
+
+        div {
+            &:hover {
+                transform: translateX(20px);
+            }
+        }
+    }
+}
+
+    #info-section {
+        article:nth-of-type(2) {
+            position: relative;
+            left: 120px;
+        }
+    }
+}
+
+//FOR PHONES======================================================================
+
+@media only screen and (max-width: 1300px) {
+
+    #info-section {
+        
+        color: rgb(235, 235, 235);
+        margin: px-to-rem(40px);
+        font-size: 40px;
+    
+        article {
+            display: flex;
+            align-items: center;
+            margin: px-to-rem(40px) px-to-rem(10px);
+    
+            figure {
+                width: 52%;
+                height: px-to-rem(320px);
+                background-size: cover;
+                background-position: center;
+                flex-shrink: 0;
+                transition: all .4s;
+                
+            }
+    
+            div {
+                margin-left: px-to-rem(50px);
+                transition: all .4s;
+    
+                h2 {
+                    font-size: px-to-rem(40px);
+                    margin-bottom: px-to-rem(8px);
+                }
+    
+                p {
+                    font-size: px-to-rem(20px);
+                    width: 100%;
+                    line-height: 180%;
+                }
+            }
+        }
+    
+        article:nth-of-type(1) figure {background-image: get-image("info-1.jpg");}
+        article:nth-of-type(2) figure {background-image: get-image("info-2.jpg");}
+        article:nth-of-type(3) figure {background-image: get-image("info-3.jpg");}
+    
+        margin-bottom: 200px;
+
+    }
+}
+
